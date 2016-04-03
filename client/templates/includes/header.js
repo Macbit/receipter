@@ -10,7 +10,7 @@ Template.header.events({
       sourceType: Camera.PictureSourceType.PHOTOLIBRARY
     }
 
-    MeteorCamera.getPicture(options, function(err, data) {
+      MeteorCamera.getPicture(options, function(err, data) {
       if (err) {
         console.log('error from get picture function', err);
       }
@@ -18,11 +18,11 @@ Template.header.events({
         console.log("data from get picture", data);
         Session.set('img', data);
         console.log('we are inside if DATA block of MeteorCamera');
-
+ 
         Meteor.call('performOCR', data, function(error, result) {
           //   // handle error/success
         });
-
+ 
         //processImage(data);
         // Meteor.call('processImage', data, function(error, result) {
         //   // handle error/success
