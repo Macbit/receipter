@@ -1,0 +1,11 @@
+<template name="receiptItem">
+  <div class="receipt">
+    <div class="receipt-content">
+      <h3>{{company}} <span>£{{total}}</span></h3>
+      <p>
+        {{datetime}}
+      </p>
+    </div>
+    <a href="{{pathFor 'receiptPage'}}" class="discuss btn btn-default">Details</a>
+  </div>
+</template>

@@ -1,0 +1,36 @@
+<template name="receiptPage">
+    <div class="receipt-page page">
+        <center><h1>{{company}}</h1>
+            <h3>{{datetime}}</h3></center>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Product</th>
+                <th>Price</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            {{#each items}}
+                <tr>
+                    <th scope="row">{{this.index}}</th>
+                    <td>{{this.description}}</td>
+                    <td>£{{this.price}}</td>
+
+                </tr>
+            {{/each}}
+             <tr>
+                    <th scope="row"></th>
+                    <td><b>Total</b></td>
+                    <td><b>£{{total}}</b></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+
+    </div>
+</template>
+
