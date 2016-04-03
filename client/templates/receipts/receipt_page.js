@@ -14,5 +14,10 @@ Template.receiptPage.helpers({
         for (var i = 0; i < this.items.length; i++) total += this.items[i].price;
         console.log(total);
         return total.toFixed(2);
+    },
+    datetime: function() {
+        date = new Date(this.datetime);
+        console.log(date);
+        return moment(date).format('D MMM YYYY @ h:mm a');
     }
 });

@@ -31,3 +31,4 @@ meteorhacks:npm
 ostrio:meteor-root
 npm-container
 cfs:graphicsmagick
+momentjs:moment

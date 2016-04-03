@@ -42,4 +42,37 @@ if (Receipts.find().count() === 0) {
         total: 3.45,
         userId: admin._id
     });
+    Receipts.insert({
+        "items": [{
+            "price": 1.25,
+            "description": "CONDENSED MILK LOHIC2 TWAROG"
+        }, {
+            "price": 1.25,
+            "description": "LOWICZ TWAROG"
+        }, {
+            "price": 0.7,
+            "description": "TARTS REDUCED PRICE"
+        }, {
+            "price": 1.39,
+            "description": "ORG BANANAS"
+        }, {
+            "price": 0.79,
+            "description": "MUSHROOMS"
+        }, {
+            "price": 0.5,
+            "description": "DAFFODIL"
+        }, {
+            "price": 0.5,
+            "description": "REDUCED PRICE DAFFODIL REDUCED PRICE"
+        }, {
+            "price": 0.05,
+            "description": "Gov BAG CHARGE x"
+        }, {
+            "price": 0.5,
+            "description": "MULTI BUY SAVINGS CHILLED PRODUCTS 2 F 2"
+        }],
+        "company": "Tesco",
+        "total": 8.68,
+        "datetime": "2016-03-09 14:29:00"
+    })
 }
